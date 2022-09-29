@@ -1,0 +1,28 @@
+{
+	"name": "metrovlc",
+	"version": "1.0.0",
+	"description": "Local timetable for specific station in metroVLC module for MagicMirror",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/lgmorand/MMM-Ratp"
+	},
+	"keywords": [
+		"magic mirror",
+		"smart mirror",
+		"localtransport",
+		"module",
+		"metro",
+		"valencia"
+	],
+	"author": "Dani Jimenez",
+	"contributors": "https://github.com/lgmorand/MMM-Ratp/graphs/contributors",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/lgmorand/MMM-Ratp/issues"
+	},
+	"homepage": "https://github.com/lgmorand/MMM-Ratp#readme",
+	"dependencies": {
+		"unirest": "latest",
+		"node-forge": "latest"
+	}
+}
