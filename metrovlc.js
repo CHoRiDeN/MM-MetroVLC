@@ -49,8 +49,7 @@ Module.register("metrovlc", {
 		var table = document.createElement("table");
 		table.className = "small";
 
-		this.origin = this.transports.origen;
-		this.destination = this.transports.destino;
+
 		this.data.header = this.transports.origen + " - " + this.transports.destino;
 
 		// adding next schedules
@@ -80,6 +79,8 @@ Module.register("metrovlc", {
 			Log.info("\r\nTransports received");
 			Log.info("\r\n" + payload);
 			this.transports = payload;
+			this.origin = payload.origen;
+			this.destination = payload.destino;
 			this.loaded = true;
 			this.updateDom();
 			this.scheduleUpdate();
